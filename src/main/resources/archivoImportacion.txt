@@ -1,0 +1,14 @@
+U; U-userA-000; 01/01/2016; Marcos; García Rouco; marcos.garcia.rouco@rai.usc.es
+U; U-userB-001; 02/02/2016; Giovanni José; López Reza; giovannijose.lopez@rai.usc.es
+U; U-userC-002; 14/09/2016; Andrés Santiago; Gómez Vidal; andressantiago.gomez@rai.usc.es
+U; U-userD-003; 28/11/1998; Jośe; Varela Varela; jose.varela.varela@rai.usc.es
+I; I-prodA-000; 01/01/2015; Proyector; Dispositivos de Audio/Vídeo; 14; Proyector de alta calidad excepcional para instalar en clases o salas de exposiciones.
+I; I-prodB-001; 01/01/2015; Torre; Equipamiento Informático; 24; Ordenador de sobremesa.
+I; I-prodC-002; 01/01/2015; Monitor; Equipamiento Informático; 4; Monitor Lenovo de 27 pulgadas.
+I; I-prodD-003; 01/01/2015; Encerado; Material escolar; 60; Encerado de plástico con un pack de 5 rotuladores de colores.
+I; I-prodE-004; 01/01/2015; Escritorio; Material escolar; 25; Escritorio de madera de pino.
+V; V-venta-000; 01/03/2016; U-userB-001; I-prodA-000; 1; 250
+V; V-venta-001; 20/03/2016; U-userC-002; I-prodA-000; 10; 250
+V; V-venta-002; 04/03/2016; U-userA-000; I-prodB-001; 3; 700
+V; V-venta-003; 13/03/2016; U-userD-003; I-prodC-002; 6; 125
+V; V-venta-004; 16/03/2016; U-userD-003; I-prodE-004; 5; 89
