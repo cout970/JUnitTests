@@ -104,4 +104,40 @@ public class Usuario {
         this.estaActivo = estaActivo;
     }
 
+    // Modificaciones
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Usuario usuario = (Usuario) o;
+
+        if (estaActivo != usuario.estaActivo) return false;
+        if (idUsuario != null ? !idUsuario.equals(usuario.idUsuario) : usuario.idUsuario != null) return false;
+        if (dni != null ? !dni.equals(usuario.dni) : usuario.dni != null) return false;
+        if (correoElectronico != null ? !correoElectronico.equals(usuario.correoElectronico) : usuario.correoElectronico != null)
+            return false;
+        if (nombre != null ? !nombre.equals(usuario.nombre) : usuario.nombre != null) return false;
+        if (apellidos != null ? !apellidos.equals(usuario.apellidos) : usuario.apellidos != null) return false;
+        if (fechaNacimiento != null ? !fechaNacimiento.equals(usuario.fechaNacimiento) : usuario.fechaNacimiento != null)
+            return false;
+        if (fechaAlta != null ? !fechaAlta.equals(usuario.fechaAlta) : usuario.fechaAlta != null) return false;
+        return cFecha != null ? cFecha.equals(usuario.cFecha) : usuario.cFecha == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = idUsuario != null ? idUsuario.hashCode() : 0;
+        result = 31 * result + (dni != null ? dni.hashCode() : 0);
+        result = 31 * result + (correoElectronico != null ? correoElectronico.hashCode() : 0);
+        result = 31 * result + (nombre != null ? nombre.hashCode() : 0);
+        result = 31 * result + (apellidos != null ? apellidos.hashCode() : 0);
+        result = 31 * result + (fechaNacimiento != null ? fechaNacimiento.hashCode() : 0);
+        result = 31 * result + (fechaAlta != null ? fechaAlta.hashCode() : 0);
+        result = 31 * result + (estaActivo ? 1 : 0);
+        result = 31 * result + (cFecha != null ? cFecha.hashCode() : 0);
+        return result;
+    }
 }

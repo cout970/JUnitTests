@@ -279,5 +279,4 @@ public class Estadistica implements Estadisticas {
         }
         return ventasL;
     }
-
 }
