@@ -33,9 +33,8 @@ public class HistogramaDeVentasDiariasEnElUltimoMes {
         diaPrueba.set(2017,Calendar.MAY,31);
 
 
-
         PowerMockito.mockStatic(Calendar.class);
-        Mockito.when(Calendar.getInstance()).thenReturn(diaPrueba);
+        PowerMockito.when(Calendar.getInstance()).thenReturn(diaPrueba);
 
         Assert.assertEquals(diaPrueba,Calendar.getInstance());
     }
@@ -107,8 +106,6 @@ public class HistogramaDeVentasDiariasEnElUltimoMes {
 
     @Test
     public void histogramaVentasMesConLaBBDDConDosVentasEsteMes() throws Exception {
-
-
 
 
         Venta venta1 = Mockito.mock(Venta.class);
