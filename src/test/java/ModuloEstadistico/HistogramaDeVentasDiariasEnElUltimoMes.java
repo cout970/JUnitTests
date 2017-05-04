@@ -6,26 +6,38 @@ import AccesoDatos.Venta;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
 
 import java.util.ArrayList;
-import java.util.Arrays;
-
 import java.util.Calendar;
 
-import static org.junit.Assert.assertEquals;
 
 /**
- * Created by cout970 on 5/3/17.
+ * Created by petrusboniatus on 5/3/17.
  *
- * TODO Pedro
  */
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest({ Calendar.class })
 public class HistogramaDeVentasDiariasEnElUltimoMes {
 
     @Before
     public void setup(){
-        /*TODO Cambiar fecha*/
+
+        Calendar diaPrueba = Calendar.getInstance();
+        diaPrueba.set(2017,Calendar.MAY,31);
+
+
+
+        PowerMockito.mockStatic(Calendar.class);
+        Mockito.when(Calendar.getInstance()).thenReturn(diaPrueba);
+
+        Assert.assertEquals(diaPrueba,Calendar.getInstance());
     }
 
 

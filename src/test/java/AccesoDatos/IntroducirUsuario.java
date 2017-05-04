@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 /**
- * Created by cout970 on 5/3/17.
+ * Created by petrusboniatus on 5/3/17.
  *
  */
 public class IntroducirUsuario {
