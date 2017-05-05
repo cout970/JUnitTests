@@ -20,6 +20,7 @@ gradle.properties
 
 #maven
 target
+target/*
 target/**
 
 #runtime
