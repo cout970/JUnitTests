@@ -71,4 +71,35 @@ public class Venta {
         this.precioUnidad = precioUnidad;
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Venta venta = (Venta) o;
+
+        if (cantidad != venta.cantidad) return false;
+        if (Double.compare(venta.precioUnidad, precioUnidad) != 0) return false;
+        if (idFactura != null ? !idFactura.equals(venta.idFactura) : venta.idFactura != null) return false;
+        if (fecha != null ? !fecha.equals(venta.fecha) : venta.fecha != null) return false;
+        if (usuario != null ? !usuario.equals(venta.usuario) : venta.usuario != null) return false;
+        if (item != null ? !item.equals(venta.item) : venta.item != null) return false;
+        return cFecha != null ? cFecha.equals(venta.cFecha) : venta.cFecha == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = idFactura != null ? idFactura.hashCode() : 0;
+        result = 31 * result + (fecha != null ? fecha.hashCode() : 0);
+        result = 31 * result + (usuario != null ? usuario.hashCode() : 0);
+        result = 31 * result + (item != null ? item.hashCode() : 0);
+        result = 31 * result + cantidad;
+        temp = Double.doubleToLongBits(precioUnidad);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (cFecha != null ? cFecha.hashCode() : 0);
+        return result;
+    }
 }

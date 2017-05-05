@@ -9,7 +9,6 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by cout970 on 5/3/17.
  * <p>
- * TODO Couto
  */
 public class IntroducirVenta {
 

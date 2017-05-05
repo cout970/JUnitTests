@@ -3,14 +3,12 @@ package AccesoDatos;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by cout970 on 5/3/17.
  * <p>
- *
  */
 public class IntroducirItem {
 
@@ -181,25 +179,26 @@ public class IntroducirItem {
     }
 
     // CP 030
-    @Test
-    public void anadirItemConStockConPuntoFlotante() throws Exception {
-        Item item = Mockito.mock(Item.class);
-
-        Mockito.when(item.getId()).thenReturn("I-ABCDE-000");
-        Mockito.when(item.getFechaDisponible()).thenReturn("20/03/2017");
-        Mockito.when(item.getNombre()).thenReturn("Destornillador sónico");
-        Mockito.when(item.getCategoria()).thenReturn("Herramientas");
-        Mockito.when(item.getStock()).thenReturn(Float.floatToIntBits(4.20f));
-        Mockito.when(item.getDescripcion()).thenReturn("Herramienta multifuncional utilizada por el Doctor. Su función más común es la de forzar cerraduras para abrir puertas, pero se le pueden dar otros usos como el de realizar chequeos médicos, controlar remotamente otros aparatos, operar la TARDIS y rastrear vida alienígena. Puede, con la excepción de un cierre hermético o de una puerta de madera, abrir cualquier tipo de cierres y operar varias computadoras, de origen humano o alienígena.");
-
-        try {
-            baseDatos.anadirItem(item);
-            Assert.fail("No se ha lanzado una excepcion");
-        } catch (Exception e) {
-            assertEquals(IllegalArgumentException.class, e.getClass());
-        }
-        assertEquals(0, baseDatos.obtenerItems().size());
-    }
+    // Invalidad, no tiene sentido en java
+//    @Test
+//    public void anadirItemConStockConPuntoFlotante() throws Exception {
+//        Item item = Mockito.mock(Item.class);
+//
+//        Mockito.when(item.getId()).thenReturn("I-ABCDE-000");
+//        Mockito.when(item.getFechaDisponible()).thenReturn("20/03/2017");
+//        Mockito.when(item.getNombre()).thenReturn("Destornillador sónico");
+//        Mockito.when(item.getCategoria()).thenReturn("Herramientas");
+//        Mockito.when(item.getStock()).thenReturn(Float.floatToIntBits(4.20f));
+//        Mockito.when(item.getDescripcion()).thenReturn("Herramienta multifuncional utilizada por el Doctor. Su función más común es la de forzar cerraduras para abrir puertas, pero se le pueden dar otros usos como el de realizar chequeos médicos, controlar remotamente otros aparatos, operar la TARDIS y rastrear vida alienígena. Puede, con la excepción de un cierre hermético o de una puerta de madera, abrir cualquier tipo de cierres y operar varias computadoras, de origen humano o alienígena.");
+//
+//        try {
+//            baseDatos.anadirItem(item);
+//            Assert.fail("No se ha lanzado una excepcion");
+//        } catch (Exception e) {
+//            assertEquals(IllegalArgumentException.class, e.getClass());
+//        }
+//        assertEquals(0, baseDatos.obtenerItems().size());
+//    }
 
     // CP 031
     @Test
