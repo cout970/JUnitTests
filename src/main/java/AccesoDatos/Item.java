@@ -72,4 +72,32 @@ public class Item {
         this.descripcion = desctripcion;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Item item = (Item) o;
+
+        if (stock != item.stock) return false;
+        if (id != null ? !id.equals(item.id) : item.id != null) return false;
+        if (fechaDisponible != null ? !fechaDisponible.equals(item.fechaDisponible) : item.fechaDisponible != null)
+            return false;
+        if (nombre != null ? !nombre.equals(item.nombre) : item.nombre != null) return false;
+        if (categoria != null ? !categoria.equals(item.categoria) : item.categoria != null) return false;
+        if (descripcion != null ? !descripcion.equals(item.descripcion) : item.descripcion != null) return false;
+        return cFecha != null ? cFecha.equals(item.cFecha) : item.cFecha == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (fechaDisponible != null ? fechaDisponible.hashCode() : 0);
+        result = 31 * result + (nombre != null ? nombre.hashCode() : 0);
+        result = 31 * result + (categoria != null ? categoria.hashCode() : 0);
+        result = 31 * result + stock;
+        result = 31 * result + (descripcion != null ? descripcion.hashCode() : 0);
+        result = 31 * result + (cFecha != null ? cFecha.hashCode() : 0);
+        return result;
+    }
 }

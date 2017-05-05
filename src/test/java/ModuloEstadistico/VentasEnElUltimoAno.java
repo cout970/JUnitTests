@@ -46,8 +46,14 @@ public class VentasEnElUltimoAno {
         Estadisticas estadisticas = new Estadistica(baseDeDatos);
         ArrayList<Venta> ventas = new ArrayList<>();
 
-        //TODO
-//        ventas.add(new Venta());
+        ventas.add(new Venta(
+                "V-ABCDEF-000",
+                "01/01/1987",
+                "U-ABCDEF-000",
+                "I-ABCDEF-000",
+                0,
+                1.0
+        ));
 
         Mockito.when(baseDeDatos.obtenerVentas()).thenReturn(ventas);
 
