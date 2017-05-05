@@ -18,6 +18,10 @@ build
 .gradle
 gradle.properties
 
+#maven
+target
+target/**
+
 #runtime
 eclipse
 run
