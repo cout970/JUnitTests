@@ -34,7 +34,7 @@ public class NumeroMedioVentasAlDiaEnElUltimoMes {
         Assert.assertEquals(fechaPrueba, Calendar.getInstance());
     }
 
-    // CP 53
+    // CP 053
     @Test
     public void mediaVentasMesConBBDDVacia() throws Exception {
 
@@ -46,7 +46,7 @@ public class NumeroMedioVentasAlDiaEnElUltimoMes {
         Assert.assertEquals(0.0, media, Double.MIN_VALUE * 10);
     }
 
-    // CP 54
+    // CP 054
     @Test
     public void meaidVentasMesConBBDDConUnaVenta() throws Exception {
 

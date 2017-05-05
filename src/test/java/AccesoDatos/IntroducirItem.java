@@ -178,7 +178,7 @@ public class IntroducirItem {
         assertEquals(0, baseDatos.obtenerItems().size());
     }
 
-    // CP 030
+    // CP 030 (Derogado)
     // Invalidad, no tiene sentido en java
 //    @Test
 //    public void anadirItemConStockConPuntoFlotante() throws Exception {
@@ -200,7 +200,7 @@ public class IntroducirItem {
 //        assertEquals(0, baseDatos.obtenerItems().size());
 //    }
 
-    // CP 031
+    // CP 030
     @Test
     public void anadirItemYaExistente() throws Exception {
         Item item0 = new Item(

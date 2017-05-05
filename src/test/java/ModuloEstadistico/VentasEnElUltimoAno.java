@@ -36,7 +36,7 @@ public class VentasEnElUltimoAno {
         assertEquals(fechaPrueba, Calendar.getInstance());
     }
 
-    // CP 50
+    // CP 050
     @Test
     public void ventasAnoConBBDDVacia() throws Exception {
         BaseDatos baseDeDatos = Mockito.mock(BaseDeDatos.class);
@@ -47,7 +47,7 @@ public class VentasEnElUltimoAno {
         assertEquals(Collections.emptyList(), resultado);
     }
 
-    // CP 51
+    // CP 051
     @Test
     public void ventasAnoConBBDDConUnaVentaDeHaceMasDeUnAno() throws Exception {
 
@@ -72,7 +72,7 @@ public class VentasEnElUltimoAno {
     }
 
 
-    // CP 52
+    // CP 052
     @Test
     public void ventasAnoConBBDDConUnaVenta() throws Exception {
         BaseDatos baseDeDatos = Mockito.mock(BaseDeDatos.class);

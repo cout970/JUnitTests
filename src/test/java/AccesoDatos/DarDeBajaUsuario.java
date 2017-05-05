@@ -48,6 +48,7 @@ public class DarDeBajaUsuario {
                 .collect(Collectors.toList());
     }
 
+    // CP 018
     @Test
     public void darBajaUsuarioConIdValida() throws Exception {
 
@@ -60,6 +61,7 @@ public class DarDeBajaUsuario {
 
     }
 
+    // CP 019
     @Test
     public void darBajaUsuarioDosVeces() throws Exception {
 
@@ -79,6 +81,7 @@ public class DarDeBajaUsuario {
 
     }
 
+    // CP 020
     @Test
     public void darBajaUsuarioConIdNulo() throws Exception {
 
@@ -97,6 +100,7 @@ public class DarDeBajaUsuario {
 
     }
 
+    // CP 021
     @Test
     public void darBajaUsuarioConIdInvalida() throws Exception {
 

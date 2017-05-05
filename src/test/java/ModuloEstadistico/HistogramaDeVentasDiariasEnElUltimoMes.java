@@ -37,7 +37,7 @@ public class HistogramaDeVentasDiariasEnElUltimoMes {
         Assert.assertEquals(diaPrueba, Calendar.getInstance());
     }
 
-
+    // CP 044
     @Test
     public void histogramaVentasMesConBBDDVacia() throws Exception {
 
@@ -64,6 +64,7 @@ public class HistogramaDeVentasDiariasEnElUltimoMes {
 
     }
 
+    // CP 045
     @Test
     public void histogramaVentasMesConLaBBDDConUnaSolaVentaDeHaceMasDeUnMes() throws Exception {
 
@@ -100,6 +101,7 @@ public class HistogramaDeVentasDiariasEnElUltimoMes {
 
     }
 
+    // CP 046
     @Test
     public void histogramaVentasMesConLaBBDDConDosVentasEsteMes() throws Exception {
 

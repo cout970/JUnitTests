@@ -42,7 +42,7 @@ public class IntroducirVenta {
     }
 
 
-    // CP 32
+    // CP 031
     @Test
     public void anadirVentaValida() throws Exception {
         Venta venta = new Venta(
@@ -60,7 +60,7 @@ public class IntroducirVenta {
         assertEquals(venta, baseDatos.obtenerVentas().get(0));
     }
 
-    // CP 33
+    // CP 032
     @Test
     public void anadirVentaConIdInvalida() throws Exception {
         Venta venta = new Venta(
@@ -81,7 +81,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 34
+    // CP 033
     @Test
     public void anadirVentaConIdNulo() throws Exception {
         Venta venta = new Venta(
@@ -102,7 +102,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 35
+    // CP 034
     @Test
     public void anadirVentaConFormatoInvalidoDeFecha() throws Exception {
         Venta venta = new Venta(
@@ -123,7 +123,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 36
+    // CP 035
     @Test
     public void anadirVentaConFechaNula() throws Exception {
         Venta venta = new Venta(
@@ -144,7 +144,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 37
+    // CP 036
     @Test
     public void anadirVentaConCantidadNegativa() throws Exception {
         Venta venta = new Venta(
@@ -165,7 +165,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 38
+    // CP 037
     @Test
     public void anadirVentaConPrecioUnitarioNegativo() throws Exception {
         Venta venta = new Venta(
@@ -186,7 +186,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 39
+    // CP 038
     @Test
     public void anadirVentaConPrecioUnitarioCero() throws Exception {
         Venta venta = new Venta(
@@ -207,7 +207,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 40
+    // CP 039
     @Test
     public void anadirVentaConIdDeUsuarioConFormatoInvalido() throws Exception {
         Venta venta = new Venta(
@@ -228,7 +228,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 41
+    // CP 040
     @Test
     public void anadirVentaConIdDeItemConFormatoInvalido() throws Exception {
         Venta venta = new Venta(
@@ -249,7 +249,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 42
+    // CP 041
     @Test
     public void anadirVentaConFechaDelFuturo() throws Exception {
         Venta venta = new Venta(
@@ -270,7 +270,7 @@ public class IntroducirVenta {
         assertEquals(0, baseDatos.obtenerVentas().size());
     }
 
-    // CP 43
+    // CP 042
     @Test
     public void anadirVentaConFechaAnteriorA1970() throws Exception {
         Venta venta = new Venta(
@@ -288,7 +288,7 @@ public class IntroducirVenta {
         assertEquals(venta, baseDatos.obtenerVentas().get(0));
     }
 
-    // CP  44
+    // CP  043
     @Test
     public void anadirVentaDosVeces() throws Exception {
         Venta venta0 = new Venta(

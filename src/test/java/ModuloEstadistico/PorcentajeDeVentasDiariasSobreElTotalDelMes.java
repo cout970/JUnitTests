@@ -36,7 +36,7 @@ public class PorcentajeDeVentasDiariasSobreElTotalDelMes {
         assertEquals(fechaPrueba, Calendar.getInstance());
     }
 
-    // CP 47
+    // CP 047
     @Test
     public void porcentajeVentasMesConLaBBDDVacia() throws Exception {
         BaseDatos baseDeDatos = Mockito.mock(BaseDeDatos.class);
@@ -47,7 +47,7 @@ public class PorcentajeDeVentasDiariasSobreElTotalDelMes {
         assertEquals("", resultado);
     }
 
-    // CP 48
+    // CP 048
     @Test
     public void porcentajeVentasMesConLaBBDDConUnaVentaConPrecioCero() throws Exception {
         BaseDatos baseDeDatos = Mockito.mock(BaseDeDatos.class);
@@ -70,7 +70,7 @@ public class PorcentajeDeVentasDiariasSobreElTotalDelMes {
         assertEquals("", resultado);
     }
 
-    // CP 49
+    // CP 049
     @Test
     public void porcentajeVentasMesConLaBBDDConUnaVentaValida() throws Exception {
         BaseDatos baseDeDatos = Mockito.mock(BaseDeDatos.class);

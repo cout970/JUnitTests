@@ -40,6 +40,7 @@ public class IntroducirUsuario {
         baseDatos = new BaseDeDatos();
     }
 
+    // CP 001
     @Test
     public void anadirUsuarioConClaveValida() throws Exception {
 
@@ -60,6 +61,7 @@ public class IntroducirUsuario {
         assertEquals(user, baseDatos.obtenerUsuarios().get(0));
     }
 
+    // CP 002
     @Test
     public void anadirUsuarioConIdInvalida() throws Exception {
 
@@ -89,9 +91,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 003
     @Test
     public void anadirUsuarioConIdNulo() throws Exception {
 
@@ -121,9 +123,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 004
     @Test
     public void anadirUsuarioConDNIInvalido() throws Exception {
 
@@ -153,9 +155,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 005
     @Test
     public void anadirUsuarioConDNINulo() throws Exception {
 
@@ -185,9 +187,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 006
     @Test
     public void anadirUsuarioConStringCorreoVacio() throws Exception {
 
@@ -217,9 +219,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 007
     @Test
     public void anadirUsuarioConCorreoInvalido() throws Exception {
 
@@ -251,6 +253,7 @@ public class IntroducirUsuario {
         );
     }
 
+    // CP 008
     @Test
     public void anadirUsuarioConCorreoNulo() throws Exception {
 
@@ -280,9 +283,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 009
     @Test
     public void anadirUsuarioConNombreInvalido() throws Exception {
 
@@ -312,10 +315,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
-
     }
 
+    // CP 010
     @Test
     public void anadirUsuarioConApellidoInvalido() throws Exception {
 
@@ -345,9 +347,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 011
     @Test
     public void anadirUsuarioConFechaEnFormatoInvalido() throws Exception {
 
@@ -377,9 +379,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 012
     @Test
     public void anadirUsuarioConFechaEnElFuturo() throws Exception {
 
@@ -409,9 +411,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 013
     @Test
     public void anadirUsuarioConFechaAnteriorA1970() throws Exception {
 
@@ -433,6 +435,7 @@ public class IntroducirUsuario {
 
     }
 
+    // CP 014
     @Test
     public void anadirUsuarioConFechaRegistroAnteriorAFechaNacimiento() throws Exception {
 
@@ -463,9 +466,9 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 
+    // CP 015
     @Test
     public void anadirUsuarioYaRegistradoEnElSistema() throws Exception {
 
@@ -498,6 +501,7 @@ public class IntroducirUsuario {
         );
     }
 
+    // CP 016
     @Test
     public void anadirUsuarioConNombreYaRegistrado() throws Exception {
 
@@ -535,6 +539,7 @@ public class IntroducirUsuario {
         );
     }
 
+    // CP 017
     @Test
     public void anadirUsuarioConCorreoYaRegistrado() throws Exception {
 
@@ -575,6 +580,5 @@ public class IntroducirUsuario {
                 usuariosAntiguos,
                 baseDatos.obtenerUsuarios()
         );
-
     }
 }
