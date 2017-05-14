@@ -3,6 +3,7 @@ package AccesoDatos;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,6 +11,7 @@ import static org.junit.Assert.assertEquals;
  * Created by cout970 on 5/3/17.
  * <p>
  */
+
 public class IntroducirVenta {
 
     private BaseDatos baseDatos;
@@ -126,6 +128,7 @@ public class IntroducirVenta {
     // CP 035
     @Test
     public void anadirVentaConFechaNula() throws Exception {
+
         Venta venta = new Venta(
                 "V-ABCDE-000",
                 null,
