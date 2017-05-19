@@ -112,7 +112,7 @@ public class IntroducirUsuario {
 
         try {
             baseDatos.anadirUsuario(user);
-            fail("Anñadir un usuario con id nulo no ha provocado una excepción");
+            fail("Añadir un usuario con id nulo no ha provocado una excepción");
         } catch (Exception e) {
             /*Ejecución normal del programa*/
         }

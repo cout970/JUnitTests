@@ -26,4 +26,4 @@ import org.junit.runners.Suite;
         PorcentajeDeVentasDiariasSobreElTotalDelMes.class,
         VentasEnElUltimoAno.class
 })
-public class SuitePrincipal {}
+public class TestSuitePrincipal {}
